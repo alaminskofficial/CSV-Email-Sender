@@ -16,9 +16,9 @@ public class EmailSenderWithAttach {
 
     public static void main(String[] args) {
         // CSV file path containing email IDs
-        String attachmentPath = "C:\\Users\\INDIA\\My Projects\\Backend\\email-sender-standalone\\AlaminResume-SDE.pdf";  // Path to the file you want to attach
+        String attachmentPath = "//AlaminResume-SDE.pdf";  // Path to the file you want to attach
 
-        String csvFile = "C:\\Users\\INDIA\\My Projects\\Backend\\email-sender-standalone\\EmailList_Sheet1.csv";
+        String csvFile = "\\EmailList_Sheet1.csv";
         String subject = "Job Application";
         String body = "Hi, \n" +
                 "\n" +
@@ -36,8 +36,8 @@ public class EmailSenderWithAttach {
                 "6294090242";
 
         // Sender email details
-        String fromEmail = "alamin695sk@gmail.com";
-        String password = "yfzr ahpd owyd ursh";
+        String fromEmail = "<<email_id>>";
+        String password = "<<password>>";
 
         // Reading email IDs from the CSV
         try (CSVReader csvReader = new CSVReader(new FileReader(csvFile))) {
